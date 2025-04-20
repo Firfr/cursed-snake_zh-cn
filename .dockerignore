@@ -23,5 +23,6 @@ Dockerfile
 # 其他
 LICENSE
 README.md
-
-
+clear-commits.bat
+clear-commits.ps1
+clear-commits.sh
