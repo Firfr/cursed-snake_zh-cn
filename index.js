@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
             moveSnake();
             if (checkCollision()) {
                 endGame();
-                alert('Game over!');
+                alert('游戏结束！');
                 resetGame();
             }
             update();
@@ -132,14 +132,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateScore() {
-        scoreDisplay.innerText = `Score: ${score}`;
+        scoreDisplay.innerText = `得分: ${score}`;
     }
 
     function updateHighScore() {
         if (score > highScore) {
             highScore = score;
             localStorage.setItem('highScore', highScore);
-            highScoreDisplay.innerText = `High Score: ${highScore}`;
+            highScoreDisplay.innerText = `最高得分: ${highScore}`;
         }
     }
 
